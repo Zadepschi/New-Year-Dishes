@@ -1,0 +1,121 @@
+body {
+    background-image: url("fon.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+}
+#searchInput {
+    display: flex;
+}
+#search {
+    flex: 1;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dish {
+    margin: 20px;
+    padding: 30px;
+}
+img {
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px rgb(39, 34, 34);
+}
+
+a {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+li {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+  
+.flip-card {
+   
+    width: 500px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+h3 {
+    margin-top: 5px;
+}
+  
+  .flip-card-back {
+   
+    transform: rotateY(180deg);
+    width: 500px;
+    height: 300px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px rgb(39, 34, 34);
+  }
+  li {
+    list-style-type: none;
+  }
+
+  @media all and (max-width: 500px) {
+    img{
+        width: 350px;
+        height: 200px;
+    }
+
+    .dish {
+        margin-left: 0px;
+        padding: 0px;
+    }
+ 
+      .flip-card {
+        width: 350px;
+        height: 200px;
+    }
+    .flip-card-back {
+        width: 350px;
+        height: 200px;
+    }
+    li {
+      font-size: 10px;
+    }
+    h1 {
+        font-family: 'Architects Daughter', cursive;
+        font-size: 40px;
+    }
+}
